@@ -1,13 +1,10 @@
-# ALCI DEVELOPMENT/DESKTOP
-
-# Arch Linux Calamares Installer or ALCI
-
 
 # AFTER INSTALLATION...............................
 
 DO
 
 sudo pacman -Syyu
+
 ./alterfiles.sh
 
 FINISH
