@@ -1,5 +1,5 @@
 
-# AFTER INSTALLATION...............................
+# AFTER INSTALLATION
 
 DO
 
@@ -9,7 +9,7 @@ sudo pacman -Syyu
 
 FINISH
 
-# --------------------------------------------------
+# ++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
 Use the correct version of Archiso to build the iso.
