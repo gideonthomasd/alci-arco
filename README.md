@@ -2,6 +2,19 @@
 
 # Arch Linux Calamares Installer or ALCI
 
+
+# AFTER INSTALLATION...............................
+
+DO
+
+sudo pacman -Syyu
+./alterfiles.sh
+
+FINISH
+
+# --------------------------------------------------
+
+
 Use the correct version of Archiso to build the iso.
 
 **Read the archiso.md.**
