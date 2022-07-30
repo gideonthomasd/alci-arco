@@ -47,6 +47,9 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="ethernet network connection “wired connection 1” active"/>
+        <value type="string" value="clipman"/>
+        <value type="string" value="ethernet network connection “enp0s3” active"/>
         <value type="string" value="system-config-printer"/>
         <value type="string" value="parcellite"/>
         <value type="string" value="pamac-tray"/>

@@ -1,5 +1,10 @@
 #!/bin/bash
 
+###### Openbox #####################
+cd ~/.config/openbox
+chmod +x *.sh
+
+
 ###### Rofi ########################
 
 cd ~/.config/rofi/launchers/colorful

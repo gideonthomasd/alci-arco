@@ -299,6 +299,11 @@ bspwm
 ttc-iosevka
 font-manager
 spectrwm
+starship
+openbox
+obconf
+obmenu-generator
+tint2
 #####Others########
 pamac-nosnap
 yay-bin

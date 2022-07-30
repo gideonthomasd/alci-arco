@@ -172,6 +172,8 @@ end
 -- Re-set wallpaper when a screen's geometry changes (e.g. different resolution)
 screen.connect_signal("property::geometry", set_wallpaper)
 
+
+
 awful.screen.connect_for_each_screen(function(s)
     -- Wallpaper
     set_wallpaper(s)
@@ -229,6 +231,8 @@ awful.screen.connect_for_each_screen(function(s)
     markup = "   ",
     widget = wibox.widget.textbox,
     }
+    local message_home = os.getenv("HOME")
+    local message_up = message_home .. "./config/awesome/updates.sh"
     s.mywibox:setup {
         layout = wibox.layout.align.horizontal,
         { -- Left widgets
@@ -243,7 +247,8 @@ awful.screen.connect_for_each_screen(function(s)
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
             mydownload,
-            awful.widget.watch("/home/phil/.config/awesome/updates.sh" ,600),
+                      
+            awful.widget.watch("/home/phil/.config/awesome/updates.sh",600),
             space,
             myweather,
             awful.widget.watch("/home/phil/.config/awesome/dwmweather.sh" ,600),
@@ -371,15 +376,22 @@ globalkeys = gears.table.join(
     awful.spawn("pcmanfm") end,
               {description = "pcmanfm", group = "apps"}),
               
-    awful.key({ modkey },            "k",     function () 
-    awful.spawn("polybar-msg cmd toggle") end,
-              {description = "Toggle Menu", group = "apps"}),
+  --  awful.key({ modkey },            "k",     function () 
+  --  awful.spawn("polybar-msg cmd toggle") end,
+   --           {description = "Toggle Menu", group = "apps"}),
     
    -- awful.key({ modkey },            "F1",     function () 
    -- awful.spawn("~/.config/awesome/change_wallpaper.sh") end,
     --          {description = "Change Wallpaper", group = "apps"}),
               
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	awful.key({ modkey }, "k", function()
+		for s in screen do
+			s.mywibox.visible = not s.mywibox.visible
+		end
+	end,
+	{description="toggle wibox", group = "awesome"}),
+
 
     awful.key({ modkey, "Shift"}, "x",
               function ()

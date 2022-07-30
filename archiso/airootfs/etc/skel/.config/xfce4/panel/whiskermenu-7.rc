@@ -1,5 +1,5 @@
-favorites=brave-browser.desktop,xfce4-file-manager.desktop,xfce4-terminal-emulator.desktop,Bloons TD 6.desktop,Dota Underlords.desktop,Bloons Monkey City.desktop,scid.desktop,steam.desktop
-recent=Bloons TD 6.desktop,xfce-settings-manager.desktop,system-config-printer.desktop,xfce4-web-browser.desktop,xfce4-mail-reader.desktop,nvidia-settings.desktop,org.manjaro.pamac.manager.desktop,xfce-display-settings.desktop,galculator.desktop
+favorites=brave-browser.desktop,xfce4-file-manager.desktop,xfce4-terminal-emulator.desktop
+recent=xfce4-terminal-emulator.desktop,xfce-settings-manager.desktop,xfce4-web-browser.desktop,xfce4-mail-reader.desktop,org.manjaro.pamac.manager.desktop,xfce-display-settings.desktop
 button-icon=archlinux-logo
 button-single-row=false
 show-button-title=false
