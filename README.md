@@ -9,6 +9,8 @@ sudo pacman -Syyu
 
 FINISH
 
+in lxappearance alter Widget to 'Dracula' and Icon theme to 'Beautyline' and Mouse Cursor to 'Bibata-Modern-Ice'
+
 # ++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
