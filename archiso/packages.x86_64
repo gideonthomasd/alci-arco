@@ -304,6 +304,7 @@ openbox
 obconf
 obmenu-generator
 tint2
+system-config-printer
 #####Others########
 pamac-nosnap
 yay-bin
